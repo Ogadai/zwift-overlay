@@ -1,6 +1,6 @@
-import { app, BrowserWindow } from 'electron';
-import open from 'open';
-import fs from 'fs';
+const { app, BrowserWindow } = require('electron');
+const open = require('open');
+const fs = require('fs');
 
 const addr = "https://zwiftsecondscreen.azurewebsites.net";
 

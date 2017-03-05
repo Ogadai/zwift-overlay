@@ -1,58 +1,21 @@
 {
   "name": "zwift-overlay",
-  "productName": "Zwift GPS",
+  "productName": "ZwiftGPS",
   "version": "1.0.0",
   "description": "Zwift GPS Overlay",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "eslint src"
+    "start": "electron .",
+    "package-win": "electron-packager . --platform=win32 --arch=x64"
   },
   "keywords": [],
   "author": "andyl",
   "license": "MIT",
-  "config": {
-    "forge": {
-      "make_targets": {
-        "win32": [
-          "zip"
-        ],
-        "darwin": [
-          "zip"
-        ]
-      },
-      "electronPackagerConfig": {},
-      "electronWinstallerConfig": {
-        "name": "zwift_overlay"
-      },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
-      "github_repository": {
-        "owner": "Ogadai",
-        "name": "zwift-overlay"
-      },
-      "windowsStoreConfig": {
-        "packageName": "",
-        "name": "zwiftoverlay"
-      }
-    }
-  },
   "dependencies": {
-    "electron-compile": "^6.1.2",
     "open": "0.0.5"
   },
   "devDependencies": {
-    "babel-plugin-transform-async-to-generator": "^6.22.0",
-    "babel-preset-env": "^1.1.10",
-    "babel-preset-react": "^6.23.0",
-    "electron-prebuilt-compile": "1.4.15",
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.10.0"
+    "electron": "^1.6.1",
+    "electron-packager": "^8.5.2"
   }
 }
