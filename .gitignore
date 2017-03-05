@@ -1,3 +1,4 @@
 node_modules
-out
 ZwiftGPS-win32-x64/
+/*.zip
+npm-debug.log.*
