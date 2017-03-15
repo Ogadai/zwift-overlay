@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron');
 const open = require('open');
 const fs = require('fs');
 
-const addr = "https://zwiftsecondscreen.azurewebsites.net";
+const addr = "http://www.zwiftgps.com";
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
