@@ -1,7 +1,7 @@
 {
   "name": "zwift-overlay",
   "productName": "ZwiftGPS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zwift GPS Overlay",
   "main": "index.js",
   "scripts": {
@@ -24,9 +24,7 @@
     "win": {
       "target": "nsis-web"
     },
-    "nsisWeb": {
-      
-    }
+    "nsisWeb": {}
   },
   "repository": {
     "url": "https://github.com/Ogadai/zwift-overlay.git"
