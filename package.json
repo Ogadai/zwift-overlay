@@ -6,10 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "zip-win": "bestzip ZwiftGPS-win32-x64.zip ZwiftGPS-win32-x64/*",
-    "build-win": "electron-packager . --platform=win32 --arch=x64",
-    "package-win": "npm run build-win && npm run zip-win",
-    "package": "npm run package-win"
+    "pack": "build --dir",
+    "dist": "build"
   },
   "keywords": [],
   "author": "andyl",
@@ -18,8 +16,19 @@
     "open": "0.0.5"
   },
   "devDependencies": {
-    "bestzip": "^1.1.3",
     "electron": "^1.6.1",
-    "electron-packager": "^8.5.2"
+    "electron-builder": "^15.5.1"
+  },
+  "build": {
+    "appId": "com.zwiftgps.overlay",
+    "win": {
+      "target": "nsis-web"
+    },
+    "nsisWeb": {
+      
+    }
+  },
+  "repository": {
+    "url": "https://github.com/Ogadai/zwift-overlay.git"
   }
 }
